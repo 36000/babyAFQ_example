@@ -1,0 +1,18 @@
+[BIDS_PARAMS]
+bids_path = "example_bids_subject"
+preproc_pipeline = "vistasoft"
+
+[DATA]
+reg_template_spec = "pediatric"
+reg_subject_spec = "b0"
+bundle_info="PediatricBundleDict()"
+
+[TRACTOGRAPHY_PARAMS]
+import_tract = "{'suffix': 'tractography', 'scope': 'mrtrix'}"
+
+[SEGMENTATION_PARAMS]
+filter_by_endpoints = false
+
+[CLEANING_PARAMS]
+distance_threshold = 4
+
